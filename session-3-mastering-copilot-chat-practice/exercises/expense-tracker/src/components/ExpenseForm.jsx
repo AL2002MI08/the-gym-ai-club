@@ -8,7 +8,6 @@ function ExpenseForm({ onAddExpense }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Enhanced validation
     if (!title || !amount || !date) {
       alert("Please fill in all fields");
       return;
